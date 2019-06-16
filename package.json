@@ -1,0 +1,27 @@
+{
+  "name": "tootall-nextjs",
+  "version": "1.0.0",
+  "author": "Jordan Denison",
+  "license": "ISC",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "lint": "standard --fix",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.84.0"
+  },
+  "devDependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "app-module-path": "^2.2.0",
+    "file-loader": "^3.0.1",
+    "standard": "^12.0.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.0"
+  }
+}
