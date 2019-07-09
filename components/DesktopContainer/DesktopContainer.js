@@ -24,7 +24,7 @@ const DesktopContainer = ({ children }) => {
   return (
     <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
       <Visibility once={false} onBottomPassed={showFixedMenu} onBottomPassedReverse={hideFixedMenu}>
-        <Segment inverted textAlign='center' vertical style={{ minHeight: '700px', padding: '1em 0em' }}>
+        <Segment inverted textAlign='center' vertical style={{ minHeight: '800px', padding: '1em 0em' }}>
           <Menu fixed={menuFixed ? 'top' : null} inverted={!menuFixed} pointing={!menuFixed} secondary={!menuFixed} size='large'>
             <Container>
               <Menu.Item as='a' active={currentVisibleAnchor === 'home-anchor'}>Home</Menu.Item>

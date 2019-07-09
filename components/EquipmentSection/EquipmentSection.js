@@ -4,7 +4,8 @@ import equipment from 'data/equipment'
 
 const EquipmentSection = () => (
   <Segment id='equipment-anchor' style={{ margin: '0em', padding: '0em' }}>
-    <Header as='h1' textAlign='center' style={{ margin: '100px', fontSize: '3em' }}>Equipment Available for Rent</Header>
+    <Header as='h1' textAlign='center' style={{ margin: '100px', fontSize: '3em' }}>This equipment is available for bare rental by the hour.</Header>
+    <Header as='h2' textAlign='center' style={{ fontSize: '2em', marginBottom: '100px' }}>Please contact me for more details.</Header>
     <Grid columns={2} stackable centered>
       <Grid.Row>
         { equipment.map(equipmentItem => (

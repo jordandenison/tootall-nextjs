@@ -22,7 +22,7 @@ const MobileContainer = ({ children }) => {
       </Sidebar>
 
       <Sidebar.Pusher dimmed={sidebarOpened}>
-        <Segment inverted textAlign='center' vertical>
+        <Segment inverted textAlign='center' vertical style={{ minHeight: '360px' }}>
           <Container>
             <Menu inverted pointing secondary size='large'>
               <Menu.Item onClick={handleToggle}>
