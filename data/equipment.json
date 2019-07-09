@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Excavator - Yanmar SV 100",
+    "description": "Two buckets, hydraulic quick change and comes with hoe pak.",
+    "image": "yanmar-sv100.jpg"
+  },
+  {
+    "name": "Excavator - 225US",
+    "description": "Having zero clearance, this unit is great for big jobs in tight spots.",
+    "image": "excavator.jpg"
+  },
+  {
+    "name": "Bobcats - S185 / S650",
+    "description": "Great for small jobs around the yard. Both come with air conditioned cab and the S650 has dual controls. Various attachments available.",
+    "image": "bobcat-S650.png"
+  },
+  {
+    "name": "Mini Excavators - Yanmar 35 (2)",
+    "description": "These mini excavators are ideal for rock walls, backyard landscaping, etc...",
+    "image": "mini-excavator.jpg"
+  },
+  {
+    "name": "Roller - Ingersoll/Rand SD-70D",
+    "description": "Two buckets, hydraulic quick change and comes with hoe pak.",
+    "image": "roller.png"
+  },
+  {
+    "name": "Dump Trailer - Trailtech",
+    "description": "Can be used to haul up to 5 yards.",
+    "image": "dump-trailer.png"
+  }
+]
