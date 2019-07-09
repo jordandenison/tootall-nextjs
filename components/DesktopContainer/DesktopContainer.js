@@ -10,8 +10,8 @@ import { getWidth } from 'lib/util'
 
 const getCurrentWindowHeight = () =>
   typeof window !== 'undefined' && typeof document !== 'undefined'
-  ? (window.pageYOffset || document.documentElement.scrollTop)  - (document.documentElement.clientTop || 0)
-  : 0
+    ? (window.pageYOffset || document.documentElement.scrollTop) - (document.documentElement.clientTop || 0)
+    : 0
 
 const DesktopContainer = ({ children }) => {
   const [menuFixed, setMenuFixed] = useState(false)

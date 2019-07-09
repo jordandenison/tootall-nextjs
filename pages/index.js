@@ -1,35 +1,15 @@
 import 'semantic-ui-css/semantic.min.css'
 import './index.css'
-import { Button, Container, Divider, Grid, Header, Image, Segment } from 'semantic-ui-react'
+import { Button, Container, Divider, Header, Segment } from 'semantic-ui-react'
 
 import ResponsiveContainer from 'components/ResponsiveContainer'
 import EquipmentSection from 'components/EquipmentSection'
+import GallerySection from 'components/GallerySection'
 
 const Homepage = () => (
   <ResponsiveContainer>
     <EquipmentSection />
-
-    <Segment id='gallery-anchor' style={{ padding: '0em' }} vertical>
-      <Grid celled='internally' columns='equal' stackable>
-        <Grid.Row textAlign='center'>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              "What a Company"
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>That is what they all say about us</p>
-          </Grid.Column>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              "I shouldn't have gone with their competitor."
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>
-              <Image avatar src='/images/avatar/large/nan.jpg' />
-              <b>Nan</b> Chief Fun Officer Acme Toys
-            </p>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </Segment>
+    <GallerySection />
 
     <Segment id='contact-anchor' style={{ padding: '8em 0em' }} vertical>
       <Container text>
