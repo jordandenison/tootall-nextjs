@@ -1,24 +1,12 @@
 import 'semantic-ui-css/semantic.min.css'
-import PropTypes from 'prop-types'
-import { Button, Container, Divider, Grid, Header, Image, List, Segment } from 'semantic-ui-react'
+import './index.css'
+import { Button, Container, Divider, Grid, Header, Image, Segment } from 'semantic-ui-react'
 
-import DesktopContainer from '../components/DesktopContainer'
-import MobileContainer from '../components/MobileContainer'
+import ResponsiveContainer from 'components/ResponsiveContainer'
 
-const ResponsiveContainer = ({ children }) => (
-  <div>
-    <DesktopContainer>{children}</DesktopContainer>
-    <MobileContainer>{children}</MobileContainer>
-  </div>
-)
-
-ResponsiveContainer.propTypes = {
-  children: PropTypes.node
-}
-
-const Index = () => (
+const Homepage = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: '8em 0em' }} vertical>
+    <Segment id='equipment-anchor' style={{ padding: '8em 0em', backgroundColor: 'grey' }} vertical>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8}>
@@ -49,7 +37,7 @@ const Index = () => (
       </Grid>
     </Segment>
 
-    <Segment style={{ padding: '0em' }} vertical>
+    <Segment id='gallery-anchor' style={{ padding: '0em' }} vertical>
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
@@ -71,7 +59,7 @@ const Index = () => (
       </Grid>
     </Segment>
 
-    <Segment style={{ padding: '8em 0em' }} vertical>
+    <Segment id='contact-anchor' style={{ padding: '8em 0em' }} vertical>
       <Container text>
         <Header as='h3' style={{ fontSize: '2em' }}>
           Breaking The Grid, Grabs Your Attention
@@ -107,42 +95,7 @@ const Index = () => (
         </Button>
       </Container>
     </Segment>
-
-    <Segment inverted vertical style={{ padding: '5em 0em' }}>
-      <Container>
-        <Grid divided inverted stackable>
-          <Grid.Row>
-            <Grid.Column width={3}>
-              <Header inverted as='h4' content='About' />
-              <List link inverted>
-                <List.Item as='a'>Sitemap</List.Item>
-                <List.Item as='a'>Contact Us</List.Item>
-                <List.Item as='a'>Religious Ceremonies</List.Item>
-                <List.Item as='a'>Gazebo Plans</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as='h4' content='Services' />
-              <List link inverted>
-                <List.Item as='a'>Banana Pre-Order</List.Item>
-                <List.Item as='a'>DNA FAQ</List.Item>
-                <List.Item as='a'>How To Access</List.Item>
-                <List.Item as='a'>Favorite X-Men</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={7}>
-              <Header as='h4' inverted>
-                Footer Header
-              </Header>
-              <p>
-                Extra space for a call to action inside the footer that could help re-engage users.
-              </p>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </Container>
-    </Segment>
   </ResponsiveContainer>
 )
 
-export default Index
+export default Homepage
