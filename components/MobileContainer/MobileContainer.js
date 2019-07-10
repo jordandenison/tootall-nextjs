@@ -4,7 +4,9 @@ import { Container, Icon, Menu, Responsive, Segment, Sidebar } from 'semantic-ui
 
 import HomepageHeading from '../HomepageHeading'
 
-import { getWidth } from 'lib/util'
+import VisibleAnchorChecker from 'components/VisibleAnchorChecker'
+
+import { getCurrentWindowHeight, getWidth } from 'lib/util'
 
 const MobileContainer = ({ children }) => {
   const [sidebarOpened, setSideBarOpened] = useState(false)
@@ -12,17 +14,19 @@ const MobileContainer = ({ children }) => {
   const handleSidebarHide = () => setSideBarOpened(false)
   const handleToggle = () => setSideBarOpened(true)
 
+  const currentVisibleAnchor = VisibleAnchorChecker(getCurrentWindowHeight())
+
   return (
     <Responsive as={Sidebar.Pushable} getWidth={getWidth} maxWidth={Responsive.onlyMobile.maxWidth}>
       <Sidebar as={Menu} animation='push' inverted onHide={handleSidebarHide} vertical visible={sidebarOpened}>
-        <Menu.Item as='a'>Home</Menu.Item>
-        <Menu.Item as='a'>Equipment</Menu.Item>
-        <Menu.Item as='a'>Gallery</Menu.Item>
-        <Menu.Item as='a'>Contact</Menu.Item>
+        <Menu.Item as='a' active={currentVisibleAnchor === 'home-anchor'} href='#home'>Home</Menu.Item>
+        <Menu.Item as='a' active={currentVisibleAnchor === 'equipment-anchor'} href='#equipment-anchor'>Equipment</Menu.Item>
+        <Menu.Item as='a' active={currentVisibleAnchor === 'gallery-anchor'} href='#gallery-anchor'>Gallery</Menu.Item>
+        <Menu.Item as='a' active={currentVisibleAnchor === 'contact-anchor'} href='#contact-anchor'>Contact</Menu.Item>
       </Sidebar>
 
       <Sidebar.Pusher dimmed={sidebarOpened}>
-        <Segment inverted textAlign='center' vertical style={{ minHeight: '360px' }}>
+        <Segment id='home' inverted textAlign='center' vertical style={{ minHeight: '360px' }}>
           <Container>
             <Menu inverted pointing secondary size='large'>
               <Menu.Item onClick={handleToggle}>
@@ -32,7 +36,6 @@ const MobileContainer = ({ children }) => {
           </Container>
           <HomepageHeading mobile />
         </Segment>
-
         {children}
       </Sidebar.Pusher>
     </Responsive>

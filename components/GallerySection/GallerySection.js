@@ -9,7 +9,7 @@ const GallerySection = () => (
       <Grid.Row>
         { gallery.map(image => (
           <Grid.Column key={image} width={4} style={{ padding: '1.5em 0' }}>
-            <Image src={`static/images/${image}`} style={{ width: '220px', height: '80%' }} centered />
+            <Image src={`static/images/${image}`} style={{ width: '300px', height: '80%' }} centered />
           </Grid.Column>
         ))
         }

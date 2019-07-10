@@ -3,7 +3,7 @@ import { Card, Grid, Header, Image, Segment } from 'semantic-ui-react'
 import equipment from 'data/equipment'
 
 const EquipmentSection = () => (
-  <Segment id='equipment-anchor' style={{ margin: '0em', padding: '0em' }}>
+  <Segment id='equipment-anchor' style={{ margin: '0', padding: '0 0 100px 0' }}>
     <Header as='h1' textAlign='center' style={{ margin: '100px', fontSize: '3em' }}>This equipment is available for bare rental by the hour.</Header>
     <Header as='h2' textAlign='center' style={{ fontSize: '2em', marginBottom: '100px' }}>Please contact me for more details.</Header>
     <Grid columns={2} stackable centered>
