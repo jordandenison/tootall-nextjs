@@ -3,7 +3,7 @@ import { Grid, Header, Image, Modal, Segment } from 'semantic-ui-react'
 import gallery from 'data/gallery'
 
 const GallerySection = () => (
-  <Segment id='gallery-anchor' style={{ margin: '0em', padding: '0em', backgroundColor: 'grey' }}>
+  <Segment id='gallery-anchor' style={{ margin: '0em', padding: '0em', backgroundColor: '#b8bcc2' }}>
     <Header as='h1' textAlign='center' style={{ margin: '100px 0 100px 0', fontSize: '3em' }}>Gallery</Header>
     <Grid columns={4} stackable centered>
       <Grid.Row>
