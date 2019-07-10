@@ -11,7 +11,7 @@ const EquipmentSection = () => (
         { equipment.map(equipmentItem => (
           <Grid.Column key={equipmentItem.name} width={8} style={{ padding: '1.5em 0' }}>
             <Card centered style={{ width: '80%' }}>
-              <Image src={`static/images/equipment/${equipmentItem.image}`} size='huge' />
+              <Image src={`static/images/equipment/${equipmentItem.image}`} style={{ height: '400px' }} />
               <Card.Content>
                 <Card.Header>{ equipmentItem.name }</Card.Header>
                 <Card.Description>{ equipmentItem.description }</Card.Description>

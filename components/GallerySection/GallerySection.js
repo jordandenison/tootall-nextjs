@@ -1,4 +1,4 @@
-import { Grid, Header, Image, Segment } from 'semantic-ui-react'
+import { Grid, Header, Image, Modal, Segment } from 'semantic-ui-react'
 
 import gallery from 'data/gallery'
 
@@ -9,7 +9,11 @@ const GallerySection = () => (
       <Grid.Row>
         { gallery.map(image => (
           <Grid.Column key={image} width={4} style={{ padding: '1.5em 0' }}>
-            <Image src={`static/images/${image}`} style={{ width: '300px', height: '80%' }} centered />
+            <Modal trigger={<Image className='galleryImage' src={`static/images/${image}`} style={{ width: '300px', height: '80%', cursor: 'pointer', boxShadow: '-5px 5px 5px' }} centered />}>
+              <Modal.Content image>
+                <Image src={`static/images/${image}`} style={{ maxHeight: '500px' }} centered />
+              </Modal.Content>
+            </Modal>
           </Grid.Column>
         ))
         }
