@@ -35,7 +35,7 @@ const VisibleAnchorChecker = () => {
 
     window.addEventListener('scroll', handleScrollEvent)
     return () => { window.removeEventListener('scroll', handleScrollEvent) }
-  }, [true])
+  }, [])
 
   return currentAnchor
 }
