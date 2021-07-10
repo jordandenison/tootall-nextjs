@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import 'semantic-ui-css/semantic.min.css'
 import './index.css'
 
@@ -8,6 +9,9 @@ import ContactSection from '../components/ContactSection'
 
 const Homepage = () => (
   <ResponsiveContainer>
+    <Head>
+      <title>Too Tall Enterprises</title>
+    </Head>
     <EquipmentSection />
     <GallerySection />
     <ContactSection />
