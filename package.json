@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build",
     "lint": "standard --fix",
-    "start": "next start"
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "next": "^8.1.0",
