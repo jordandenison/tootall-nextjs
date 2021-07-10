@@ -2,11 +2,11 @@ import { useState } from 'react'
 import PropTypes from 'prop-types'
 import { Container, Menu, Responsive, Segment, Visibility } from 'semantic-ui-react'
 
-import HomepageHeading from 'components/HomepageHeading'
+import HomepageHeading from '../HomepageHeading'
 
-import VisibleAnchorChecker from 'components/VisibleAnchorChecker'
+import VisibleAnchorChecker from '../VisibleAnchorChecker'
 
-import { getCurrentWindowHeight, getWidth } from 'lib/util'
+import { getCurrentWindowHeight, getWidth } from '../../lib/util'
 
 const DesktopContainer = ({ children }) => {
   const [menuFixed, setMenuFixed] = useState(false)

@@ -4,9 +4,9 @@ import { Container, Icon, Menu, Responsive, Segment, Sidebar } from 'semantic-ui
 
 import HomepageHeading from '../HomepageHeading'
 
-import VisibleAnchorChecker from 'components/VisibleAnchorChecker'
+import VisibleAnchorChecker from '../VisibleAnchorChecker'
 
-import { getCurrentWindowHeight, getWidth } from 'lib/util'
+import { getCurrentWindowHeight, getWidth } from '../../lib/util'
 
 const MobileContainer = ({ children }) => {
   const [sidebarOpened, setSideBarOpened] = useState(false)

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 
-import DesktopContainer from 'components/DesktopContainer'
-import MobileContainer from 'components/MobileContainer'
+import DesktopContainer from '../DesktopContainer'
+import MobileContainer from '../MobileContainer'
 
 const ResponsiveContainer = ({ children }) => (
   <div>

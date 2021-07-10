@@ -1,6 +1,6 @@
 import { Card, Grid, Header, Image, Segment } from 'semantic-ui-react'
 
-import equipment from 'data/equipment'
+import equipment from '../../data/equipment'
 
 const EquipmentSection = () => (
   <Segment id='equipment-anchor' style={{ margin: '0', padding: '0 0 100px 0' }}>

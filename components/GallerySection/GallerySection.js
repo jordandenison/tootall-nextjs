@@ -1,6 +1,6 @@
 import { Grid, Header, Image, Modal, Segment } from 'semantic-ui-react'
 
-import gallery from 'data/gallery'
+import gallery from '../../data/gallery'
 
 const GallerySection = () => (
   <Segment id='gallery-anchor' style={{ margin: '0em', padding: '0em', backgroundColor: '#b8bcc2' }}>
