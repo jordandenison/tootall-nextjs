@@ -14,9 +14,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.84.0"
-  },
-  "devDependencies": {
+    "semantic-ui-react": "^0.84.0",
     "@zeit/next-css": "^1.0.1",
     "app-module-path": "^2.2.0",
     "file-loader": "^3.0.1",
