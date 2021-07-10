@@ -11,6 +11,7 @@ const Homepage = () => (
   <ResponsiveContainer>
     <Head>
       <title>Too Tall Enterprises</title>
+      <link rel="shortcut icon" href="/static/favicon.ico" />
     </Head>
     <EquipmentSection />
     <GallerySection />
